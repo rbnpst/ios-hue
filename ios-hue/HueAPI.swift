@@ -35,6 +35,7 @@ class HueAPI {
                     let name = result["name"].string
                     let on = result["state"]["on"].bool
                     
+                    light.id = id
                     light.name = name
                     light.on = on
                     

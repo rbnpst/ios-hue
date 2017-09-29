@@ -29,7 +29,7 @@ class LightTableViewController: UITableViewController {
         let hostname = place?.hostname
         let username = place?.username
         
-        api.requestLights(url: "http://192.168.178.16:8000/api/", username: "newdeveloper") { response in
+        api.requestLights(url: hostname!, username: username!) { response in
             self.lights = response
             self.tableView.reloadData()
         }
@@ -55,8 +55,15 @@ class LightTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "lightIdentifier", for: indexPath) as! LightTableViewCell
         
+        let hostname = place?.hostname
+        let username = place?.username
+        
         let light : Light = lights[indexPath.row]
         cell.labelLightName.text = light.name
+        cell.switchLightOn.setOn(lights[indexPath.row].on!, animated: false)
+        cell.lightId = light.id!
+        cell.hostname = hostname!
+        cell.username = username!
 
         return cell
     }

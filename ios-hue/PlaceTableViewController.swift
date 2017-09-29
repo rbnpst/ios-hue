@@ -16,6 +16,7 @@ class PlaceTableViewController: UITableViewController {
         super.viewDidLoad()
 
         places.append(Place(name: "Emulator", hostname: "http://192.168.178.16:8000/api/", username: "newdeveloper"))
+        places.append(Place(name: "LD134", hostname: "http://192.168.1.179/api/", username: "iXNmJxbOS1lYsdE2ug6sOmdGrPe1cyill6Y7TPM2"))
         
 //        self.tableView.reloadData()
     }

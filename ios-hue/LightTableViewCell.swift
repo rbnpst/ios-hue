@@ -13,6 +13,20 @@ class LightTableViewCell: UITableViewCell {
     @IBOutlet weak var labelLightName: UILabel!
     @IBOutlet weak var switchLightOn: UISwitch!
     
+    var lightId : String = ""
+    var hostname : String = ""
+    var username : String = ""
+    
+    @IBAction func onSwitchEvent(_ sender: Any) {
+        let light = Light()
+        print("\(hostname)\(username)/lights/\(lightId)/state/")
+        if switchLightOn.isOn {
+            light.toggleLight(on: true, url: "\(hostname)\(username)/lights/\(lightId)/state/")
+        } else {
+            light.toggleLight(on: false, url: "\(hostname)\(username)/lights/\(lightId)/state/")
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
