@@ -12,6 +12,14 @@
 		001251DE1F7D3064001F472A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001251DC1F7D3064001F472A /* Main.storyboard */; };
 		001251E01F7D3064001F472A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001251DF1F7D3064001F472A /* Assets.xcassets */; };
 		001251E31F7D3064001F472A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001251E11F7D3064001F472A /* LaunchScreen.storyboard */; };
+		001251EE1F7D3985001F472A /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251ED1F7D3985001F472A /* Place.swift */; };
+		001251F01F7D3A28001F472A /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251EF1F7D3A28001F472A /* Light.swift */; };
+		001251F21F7D3C1D001F472A /* HueAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251F11F7D3C1D001F472A /* HueAPI.swift */; };
+		001251F41F7D3EEB001F472A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251F31F7D3EEB001F472A /* PlaceTableViewCell.swift */; };
+		001251F61F7D4036001F472A /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251F51F7D4036001F472A /* PlaceTableViewController.swift */; };
+		001251F81F7D51E3001F472A /* LightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251F71F7D51E3001F472A /* LightTableViewController.swift */; };
+		001251FA1F7D6C6E001F472A /* LightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001251F91F7D6C6E001F472A /* LightTableViewCell.swift */; };
+		8B7A8FFC226816C082101745 /* Pods_ios_hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AF5E24A06AC4BA3E28DDDF /* Pods_ios_hue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,16 @@
 		001251DF1F7D3064001F472A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001251E21F7D3064001F472A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		001251E41F7D3064001F472A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001251ED1F7D3985001F472A /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		001251EF1F7D3A28001F472A /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		001251F11F7D3C1D001F472A /* HueAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueAPI.swift; sourceTree = "<group>"; };
+		001251F31F7D3EEB001F472A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		001251F51F7D4036001F472A /* PlaceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
+		001251F71F7D51E3001F472A /* LightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTableViewController.swift; sourceTree = "<group>"; };
+		001251F91F7D6C6E001F472A /* LightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTableViewCell.swift; sourceTree = "<group>"; };
+		6653C8ABB8139A73F2D15B47 /* Pods-ios-hue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-hue.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-hue/Pods-ios-hue.release.xcconfig"; sourceTree = "<group>"; };
+		C8AF5E24A06AC4BA3E28DDDF /* Pods_ios_hue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_hue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BB4A1367E68E29972FF556 /* Pods-ios-hue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-hue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-hue/Pods-ios-hue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7A8FFC226816C082101745 /* Pods_ios_hue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				001251D71F7D3064001F472A /* ios-hue */,
 				001251D61F7D3064001F472A /* Products */,
+				C04AF84ADC3CEF17BDF78CB2 /* Pods */,
+				C15FDBBE68C35BFDAD7405D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,62 @@
 		001251D71F7D3064001F472A /* ios-hue */ = {
 			isa = PBXGroup;
 			children = (
+				001251EC1F7D3971001F472A /* Controller */,
+				001251EB1F7D396B001F472A /* View */,
+				001251EA1F7D3961001F472A /* Model */,
 				001251D81F7D3064001F472A /* AppDelegate.swift */,
-				001251DA1F7D3064001F472A /* ViewController.swift */,
 				001251DC1F7D3064001F472A /* Main.storyboard */,
 				001251DF1F7D3064001F472A /* Assets.xcassets */,
 				001251E11F7D3064001F472A /* LaunchScreen.storyboard */,
 				001251E41F7D3064001F472A /* Info.plist */,
+				001251F11F7D3C1D001F472A /* HueAPI.swift */,
 			);
 			path = "ios-hue";
+			sourceTree = "<group>";
+		};
+		001251EA1F7D3961001F472A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				001251ED1F7D3985001F472A /* Place.swift */,
+				001251EF1F7D3A28001F472A /* Light.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		001251EB1F7D396B001F472A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				001251F31F7D3EEB001F472A /* PlaceTableViewCell.swift */,
+				001251F51F7D4036001F472A /* PlaceTableViewController.swift */,
+				001251F71F7D51E3001F472A /* LightTableViewController.swift */,
+				001251F91F7D6C6E001F472A /* LightTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		001251EC1F7D3971001F472A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				001251DA1F7D3064001F472A /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C04AF84ADC3CEF17BDF78CB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8BB4A1367E68E29972FF556 /* Pods-ios-hue.debug.xcconfig */,
+				6653C8ABB8139A73F2D15B47 /* Pods-ios-hue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C15FDBBE68C35BFDAD7405D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8AF5E24A06AC4BA3E28DDDF /* Pods_ios_hue.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 001251E71F7D3064001F472A /* Build configuration list for PBXNativeTarget "ios-hue" */;
 			buildPhases = (
+				D3D001E043A726E1F848DC91 /* [CP] Check Pods Manifest.lock */,
 				001251D11F7D3064001F472A /* Sources */,
 				001251D21F7D3064001F472A /* Frameworks */,
 				001251D31F7D3064001F472A /* Resources */,
+				2E99A5F0E85179567A5979B2 /* [CP] Embed Pods Frameworks */,
+				26A140DC02374DB09554A0E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +203,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26A140DC02374DB09554A0E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-hue/Pods-ios-hue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E99A5F0E85179567A5979B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-hue/Pods-ios-hue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-hue/Pods-ios-hue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D001E043A726E1F848DC91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-hue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		001251D11F7D3064001F472A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001251F81F7D51E3001F472A /* LightTableViewController.swift in Sources */,
+				001251EE1F7D3985001F472A /* Place.swift in Sources */,
+				001251F61F7D4036001F472A /* PlaceTableViewController.swift in Sources */,
 				001251DB1F7D3064001F472A /* ViewController.swift in Sources */,
+				001251FA1F7D6C6E001F472A /* LightTableViewCell.swift in Sources */,
+				001251F01F7D3A28001F472A /* Light.swift in Sources */,
+				001251F21F7D3C1D001F472A /* HueAPI.swift in Sources */,
 				001251D91F7D3064001F472A /* AppDelegate.swift in Sources */,
+				001251F41F7D3EEB001F472A /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +395,7 @@
 		};
 		001251E81F7D3064001F472A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BB4A1367E68E29972FF556 /* Pods-ios-hue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-hue/Info.plist";
@@ -272,6 +408,7 @@
 		};
 		001251E91F7D3064001F472A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6653C8ABB8139A73F2D15B47 /* Pods-ios-hue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-hue/Info.plist";
@@ -301,6 +438,7 @@
 				001251E91F7D3064001F472A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
